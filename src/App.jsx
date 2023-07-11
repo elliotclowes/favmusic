@@ -1,8 +1,5 @@
 import React, {useState} from 'react'
-import Song from './components/Song/index.jsx';
-import Details from './components/Details/index.jsx'
-import Discography from './components/Discography/index.jsx'
-import Tour from './components/Tour/index.jsx'
+import { Song, Details, Discography, Tour } from './components'
 import './index.css'
 
 function App() {
