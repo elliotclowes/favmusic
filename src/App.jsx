@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Song, Details, Discography, Tour } from './components'
+import { Song, Details, Discography, Tour, OfTheDay } from './components'
 import './index.css'
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
     return (
     <>
       <Details />
+      <OfTheDay />
       <Tour inputText={inputText} setInputText={setInputText} inputDate={inputDate} setInputDate={setInputDate} submitValue={submitValue} setSubmitValue={setSubmitValue}/>
       <Song />
       <Discography />
