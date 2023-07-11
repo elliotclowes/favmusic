@@ -1,9 +1,4 @@
-import React, { useState } from "react"
-
-export default function Tour () {
-  const [inputText, setInputText] = useState('')
-  const [inputDate, setInputDate] = useState('')
-  const [submitValue, setSubmitValue] = useState('')
+export default function Tour ({inputText, setInputText, inputDate, setInputDate, submitValue, setSubmitValue}) {
 
   const handleInput = (e) => {
     setInputText(e.target.value)
@@ -21,7 +16,7 @@ export default function Tour () {
   return (
     <>
       <div>
-        <h2>Add Tour</h2>
+        <h2>Add Tour Dates</h2>
         {submitValue}
           <form onSubmit={handleSubmit}>
             <input onChange={handleInput} type="text" placeholder="Location"/>

@@ -1,5 +1,5 @@
 import React from "react";
-import Song from './Song.jsx';
+import Song from '../Song/index.jsx';
 
 export default function Details() {
     const albums = [
@@ -46,6 +46,7 @@ export default function Details() {
                             <Song name={song} key={index} />
                         ))}
                     </ul>
+                    <br></br><hr></hr><br></br><br></br>
                 </div>
             ))}
         </>

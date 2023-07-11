@@ -1,18 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom';
-import Song from './Song.jsx';
-import Details from './Details.jsx'
-import Discography from './Discography.jsx'
-import Tour from './Tour.jsx'
-import './index.css'
+import ReactDOM from 'react-dom/client'
+import App from './App'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <>
-      <Details />
-      <Tour />
-      <Song />
-      <Discography />
-    </>
-  </React.StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById('root')).render(<App />)

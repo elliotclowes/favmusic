@@ -9,9 +9,9 @@ function Song({ name }) {
 
     return (
         <li>
-            {name}
+            {name}&nbsp;&nbsp;&nbsp;
             <button onClick={handleClick}>
-                {liked ? '👍' : 'Click to like'}
+                {liked ? '👍' : 'Like?'}
             </button>
         </li>
     )
